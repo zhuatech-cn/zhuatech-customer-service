@@ -1,0 +1,50 @@
+[
+  {
+    "patch": {},
+    "expected": {
+      "decision": "PASS",
+      "responseDays": "#9",
+      "resolveDays": "#13",
+      "followups": "#0"
+    },
+    "error": false
+  },
+  {
+    "patch": {
+      "responseDue": "2026-10-22"
+    },
+    "expected": {
+      "decision": "HOLD"
+    },
+    "error": false
+  },
+  {
+    "patch": {
+      "responseDue": "2026-10-22",
+      "responded": "YES"
+    },
+    "expected": {
+      "decision": "PASS"
+    },
+    "error": false
+  },
+  {
+    "patch": {
+      "reopened": "1"
+    },
+    "expected": {
+      "decision": "REVIEW"
+    },
+    "error": false
+  },
+  {
+    "patch": {
+      "responseDue": "2026-10-20",
+      "resolveDue": "2026-10-22"
+    },
+    "expected": {
+      "decision": "HOLD"
+    },
+    "error": false
+  }
+]
